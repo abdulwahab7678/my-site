@@ -8,7 +8,7 @@
   <title>Vite App</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="300" id="top">
 
   <nav>
     <div class="container flex flex-wrap justify-between items-center">
@@ -28,16 +28,16 @@
       </button>
       <div class="md:hidden sm:hidden" id="navbar-default">
         <ul class="nav-ul">
-          <li><a href="#" class="active" aria-current="page">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Contact</a></li>
+          <li class="active"><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#aboutUs">About</a></li>
+          <li><a class="nav-link" href="#mySkills">Skills</a></li> 
+          <li><a class="nav-link" href="#">Projects</a></li>
+          <li><a class="nav-link" href="#">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <section class="sec-1">
+  <section id="home" class="sec-1 hero-bg" >
     <div class="container">
       <div class="grid grid-cols-12">
         <div class="lg:col-span-6 md:col-span-12 sm:col-span-12 md:order-1 sm:order-1">
@@ -47,7 +47,8 @@
             <h2>front End Developer</h2>
             <p>Hi, my name is Muzzmmil Khan and I am a full-stack web developer with 2+ years of experience with modern
               technologies like React, Next js, Tailwind CSS, Node js, Mongo DB, Express JS etc..</p>
-            <button class="main-btn"><span><img src="./images/download-icon.png" alt=""> Download Resume</span></button>
+            <button class="main-btn"><span><i class="fa-solid fa-download mr-3 text-[20px]"></i> Download
+                Resume</span></button>
           </div>
         </div>
         <div class="lg:col-span-6 md:col-span-12 sm:col-span-12 mx-auto ">
@@ -59,8 +60,9 @@
       <a href="#aboutUs" class="arrow-btm">
         <img src="./images/arrow-btm.png" alt="">
       </a>
+    </div>
   </section>
-  <section class="sec-2" id="aboutUs">
+  <section id="aboutUs" class="sec-2 hero-bg">
     <div class="container">
       <h2>about <span>us</span></h2>
       <div class="grid grid-cols-12 gap-8 sm:px-4">
@@ -83,7 +85,7 @@
       </div>
     </div>
   </section>
-  <section class="sec-3 ">
+  <section id="mySkills" class="sec-3 hero-bg" >
     <div class="container">
       <h2 class="mb-8 text-center">My <span>Skills</span></h2>
       <div class="grid grid-cols-12 gap-8">

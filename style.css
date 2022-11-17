@@ -3,6 +3,9 @@
 @tailwind utilities;
 /* #43cea2 → #185a9d */
 /* from-[#43cea2] to-[#0e71c2] */
+html{
+  @apply scroll-smooth
+}
 body{
   @apply bg-[#14181a] font-kanit
 }
@@ -10,13 +13,13 @@ body{
   @apply max-w-[1170px] mx-auto
 }
 nav{
-  @apply bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-black absolute top-0 w-[100%] fixed z-50
+  @apply bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-black top-0 w-[100%] fixed z-50
 }
 .nav-ul{
   @apply flex  py-1  bg-transparent md:text-sm md:font-medium md:border-0
 }
 .nav-ul li a{
-  @apply block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent
+  @apply  block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent
 }
 .nav-ul li a.active{
   @apply block bg-gradient-to-r from-[#43cea2] to-[#0e71c2] py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white

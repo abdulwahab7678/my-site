@@ -26,15 +26,22 @@
             clip-rule="evenodd"></path>
         </svg>
       </button>
-      <div class="md:hidden sm:hidden" id="navbar-default">
-        <ul class="nav-ul">
-          <li class="active"><a class="nav-link" href="#home">Home</a></li>
-          <li><a class="nav-link" href="#aboutUs">About</a></li>
-          <li><a class="nav-link" href="#mySkills">Skills</a></li> 
-          <li><a class="nav-link" href="#">Projects</a></li>
-          <li><a class="nav-link" href="#">Contact</a></li>
-        </ul>
+      <div class="flex items-center">
+        <div class="md:hidden sm:hidden" id="navbar-default">
+          <ul class="nav-ul">
+            <li><a class="nav-link active" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#aboutUs">About</a></li>
+            <li><a class="nav-link" href="#mySkills">Skills</a></li> 
+            <li><a class="nav-link" href="#">Projects</a></li>
+            <li><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+        <button class="js__dark-mode-toggle dark-mode-toggle" type="button">
+          <span class="dark-mode-toggle__icon"></span>
+          <span class="dark-mode-toggle__text hidden--visually">dark mode</span>
+        </button>
       </div>
+   
     </div>
   </nav>
   <section id="home" class="sec-1 hero-bg" >
@@ -87,13 +94,13 @@
   </section>
   <section id="mySkills" class="sec-3 hero-bg" >
     <div class="container">
-      <h2 class="mb-8 text-center">My <span>Skills</span></h2>
+      <h2 class="mb-8 text-center">Skills <span>and</span> tools</h2>
       <div class="grid grid-cols-12 gap-8">
         <div class="lg:col-span-3 md:col-span-6 sm:col-span-6">
           <div class="box">
             <span class="box-span">
               <img src="./images/html.svg" alt="html">
-              <span>HTML</span>
+              <span>HTML 5</span>
             </span>
           </div>
         </div>
@@ -101,7 +108,7 @@
           <div class="box">
             <span class="box-span">
               <img src="./images/css.svg" alt="css">
-              <span>CSS</span>
+              <span>CSS 3</span>
             </span>
           </div>
         </div>
@@ -109,7 +116,7 @@
           <div class="box">
             <span class="box-span">
               <img src="./images/bootstrap-5.svg" alt="bootstrap">
-              <span>BOOTSTRAP</span>
+              <span>BOOTSTRAP </span>
             </span>
           </div>
         </div>
@@ -117,7 +124,7 @@
           <div class="box">
             <span class="box-span">
               <img src="./images/tailwind.svg" alt="tailwind">
-              <span>TAILWIND</span>
+              <span>TAILWIND CSS</span>
             </span>
           </div>
         </div>
@@ -142,6 +149,38 @@
             <span class="box-span">
               <img src="./images/npm.svg" alt="npm">
               <span>NPM</span>
+            </span>
+          </div>
+        </div>
+        <div class="lg:col-span-3 md:col-span-6 sm:col-span-6">
+          <div class="box">
+            <span class="box-span">
+              <img src="./images/vite.svg" alt="vite">
+              <span>VITE</span>
+            </span>
+          </div>
+        </div>
+        <div class="lg:col-span-3 md:col-span-6 sm:col-span-6">
+          <div class="box">
+            <span class="box-span">
+              <img src="./images/git-icon.svg" alt="git bash">
+              <span>git bash</span>
+            </span>
+          </div>
+        </div>
+        <div class="lg:col-span-3 md:col-span-6 sm:col-span-6">
+          <div class="box">
+            <span class="box-span">
+              <img src="./images/github.svg" alt="github">
+              <span>github</span>
+            </span>
+          </div>
+        </div>
+        <div class="lg:col-span-3 md:col-span-6 sm:col-span-6">
+          <div class="box">
+            <span class="box-span">
+              <img src="./images/parcel__.webp" alt="parcel">
+              <span>parcel</span>
             </span>
           </div>
         </div>

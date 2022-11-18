@@ -91,4 +91,25 @@ p{
 .sec-3 .box span{
   @apply text-[20px] font-medium text-white italic uppercase
 }
+.sec-4 .portfolio{
+  @apply text-center h-[400px] w-[100%] relative mt-[30px] bg-gradient-to-r from-[#43cea2] to-[#0e71c2] rounded before:content-[''] before:absolute before:left-[5px] before:top-[5px] before:bottom-[5px] before:right-[5px] before:w-[98%] before:h-[97%] before:rounded before:bg-[#14181a] before:z-0 
+}
+.sec-4 .portfolio img{
+  @apply  h-[100%] w-[100%] absolute left-[20px] top-[-20px] rounded  
+}
+.sec-4 .portfolio-p .port-icons{
+  @apply absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] 
+}
+.sec-4 .portfolio-p .port-icons i{
+  @apply text-[20px] border-2 rounded-[100%] p-2 first-of-type:mr-1 last-of-type:ml-1 
+}
+.sec-4 .portfolio-p .content {
+  @apply absolute bottom-0 pl-5 pb-4
+}
+.sec-4 .portfolio-p .content h3{
+  @apply lg:text-[25px] uppercase tracking-wider pb-1
+}
+.sec-4 .portfolio-p .content p{
+  @apply capitalize	p-0 [word-spacing:14px]
+}
 

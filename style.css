@@ -29,7 +29,7 @@ nav{
 }
 
 .sec-1 .profile-img{
-  @apply lg:h-[380px] md:h-[100px] sm:h-[100px] lg:w-[380px] md:w-[100px] sm:w-[100px] rounded-[100%] border-4 border-zinc-700 pt-4 overflow-hidden
+  @apply lg:h-[380px] md:h-[200px] sm:h-[150px] lg:w-[380px] md:w-[200px] sm:w-[150px] rounded-[100%] border-4 border-zinc-700 pt-4 overflow-hidden
 }
 h1{
   @apply text-[#f1f2f3] lg:text-[50px] md:text-[40px] sm:text-[34px] font-medium lg:leading-[70px] md:leading-[55px] sm:leading-[45px] uppercase
@@ -118,12 +118,12 @@ p{
   @apply pb-3 border-b-2 border-gray-500 px-5 mb-4
 }
 .sec-5 .contact-us h3{
-  @apply text-[22px] sm:text-[20px] leading-[27px] text-gray-300
+  @apply text-[22px] sm:text-[20px] leading-[27px] 
 }
 .sec-5 .contact-us p{
-  @apply text-[13px] p-0 text-gray-300
+  @apply text-[13px] p-0 
 }
 .social-icons i{
-  @apply text-[20px] pt-4 mr-4 scale-95 text-gray-300 hover:scale-125 transition-all ease-in-out duration-300
+  @apply text-[20px] pt-4 mr-4 scale-95 hover:scale-125 transition-all ease-in-out duration-300
 }
 

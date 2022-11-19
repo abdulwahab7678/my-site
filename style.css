@@ -15,14 +15,20 @@ body{
 nav{
   @apply bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-black top-0 w-[100%] fixed z-50
 }
+.nav-ul-p{
+  @apply sm:left-[-100%] sm:w-[100%] sm:h-[100%] sm:bg-[#000] sm:bg-opacity-80 sm:fixed sm:top-[50%] sm:translate-x-[-50%] sm:translate-y-[-50%] md:w-[100%] md:h-[100%] md:bg-[#000] md:bg-opacity-80 md:fixed md:top-[50%] md:left-[50%] md:translate-x-[-50%] md:translate-y-[-50%]
+}
+.nav-ul-p .show{
+  @apply sm:left-[50%]
+}
 .nav-ul{
-  @apply flex  py-1  bg-transparent md:text-sm md:font-medium md:border-0
+  @apply flex py-1  bg-transparent md:text-sm md:font-medium md:border-0 sm:flex-col sm:text-center sm:absolute sm:top-[50%] sm:left-[50%] sm:translate-x-[-50%] sm:translate-y-[-50%] md:flex-col md:text-center md:absolute md:top-[50%] md:left-[50%] md:translate-x-[-50%] md:translate-y-[-50%]
 }
 .nav-ul li a{
-  @apply  block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent
+  @apply  block sm:text-[30px] py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-transparent dark:hover:text-white md:dark:hover:bg-transparent
 }
 .nav-ul li a.active{
-  @apply block bg-gradient-to-r from-[#43cea2] to-[#0e71c2] py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white
+  @apply block lg:bg-gradient-to-r lg:from-[#43cea2] lg:to-[#0e71c2] py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:p-0 dark:text-white
 }
 .sec-1{
   @apply lg:h-[100vh] md:h-[100%] sm:h-[100%]  flex items-center justify-center pt-[100px] md:pb-12 sm:pb-12 relative

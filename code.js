@@ -212,3 +212,12 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 })
 
+
+
+const menuBtn = document.querySelector(".menuBtn")
+const navbar = document.querySelector(".nav-ul-p")
+
+menuBtn.addEventListener("click", ()=>{
+  navbar.classList.toggle("show")
+})
+

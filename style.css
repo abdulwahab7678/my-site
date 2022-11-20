@@ -7,7 +7,7 @@ html{
   @apply scroll-smooth
 }
 body{
-  @apply bg-[#14181a] font-kanit
+  @apply bg-[#14181a] font-kanit overflow-x-hidden
 }
 .container{
   @apply max-w-[1170px] mx-auto
@@ -15,11 +15,14 @@ body{
 nav{
   @apply border-gray-200 px-2 sm:px-4 py-2.5 rounded bg-black top-0 w-[100%] fixed z-50
 }
+.menuBtn{
+  @apply text-[30px] inline-flex items-center z-50 text-white p-2 lg:hidden
+}
 .nav-ul-p{
-  @apply sm:left-[-100%] sm:w-[100%] sm:h-[100%] sm:bg-[#000] sm:bg-opacity-80 sm:fixed sm:top-[50%] sm:translate-x-[-50%] sm:translate-y-[-50%] md:w-[100%] md:h-[100%] md:bg-[#000] md:bg-opacity-80 md:fixed md:top-[50%] md:left-[50%] md:translate-x-[-50%] md:translate-y-[-50%]
+  @apply  transition-all duration-700 ease-in-out sm:left-[-100%] sm:w-[100%] sm:h-[100%] sm:bg-[#000] sm:bg-opacity-80 sm:fixed sm:top-[50%] sm:translate-x-[-50%] sm:translate-y-[-50%] md:w-[100%] md:h-[100%] md:bg-[#000] md:bg-opacity-80 md:fixed md:top-[50%] md:left-[50%] md:translate-x-[-50%] md:translate-y-[-50%]
 }
 .show{
-  @apply left-[50%] transition-all duration-300 ease-in-out
+  @apply left-[50%] transition-all duration-700 ease-in-out
 }
 .nav-ul{
   @apply flex py-1 bg-transparent md:text-sm md:font-medium md:border-0 sm:flex-col sm:text-center sm:absolute sm:top-[50%] sm:left-[50%] sm:translate-x-[-50%] sm:translate-y-[-50%] md:flex-col md:text-center md:absolute md:top-[50%] md:left-[50%] md:translate-x-[-50%] md:translate-y-[-50%]

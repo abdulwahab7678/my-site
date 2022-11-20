@@ -73,7 +73,7 @@ p{
 }
 
 .sec-2 .about-us-p{
-  @apply text-center h-[350px] w-[480px] sm:w-[330px] sm:h-[260px]  relative mt-[30px] bg-gradient-to-r from-[#43cea2] to-[#0e71c2] rounded before:content-[''] before:absolute before:left-[5px] before:top-[5px] before:bottom-[5px] before:right-[5px] before:w-[98%] before:h-[97%] before:rounded before:bg-[#14181a] before:z-0 
+  @apply text-center h-[350px] w-[480px] sm:w-[310px] sm:h-[250px]  relative mt-[30px] bg-gradient-to-r from-[#43cea2] to-[#0e71c2] rounded before:content-[''] before:absolute before:left-[5px] before:top-[5px] before:bottom-[5px] before:right-[5px] before:w-[98%] before:h-[97%] before:rounded before:bg-[#14181a] before:z-0 
 }
 .sec-2 .about-us-p img{
   @apply h-[100%] w-[100%] absolute left-[20px] top-[-20px] rounded 
@@ -97,7 +97,7 @@ p{
   @apply  lg:text-[20px] sm:text-[15px] font-medium text-white italic uppercase
 }
 .sec-4 .portfolio{
-  @apply text-center h-[400px] lg:w-[100%] md:w-[480px]  sm:w-[330px] sm:h-[260px] relative mt-[30px] bg-gradient-to-r from-[#43cea2] to-[#0e71c2] rounded before:content-[''] before:absolute before:left-[5px] before:top-[5px] before:bottom-[5px] before:right-[5px] before:w-[98%] before:h-[97%] before:rounded before:bg-[#14181a] before:z-0 
+  @apply text-center h-[400px] lg:w-[100%] md:w-[480px]  sm:w-[310px] sm:h-[250px] relative mt-[30px] bg-gradient-to-r from-[#43cea2] to-[#0e71c2] rounded before:content-[''] before:absolute before:left-[5px] before:top-[5px] before:bottom-[5px] before:right-[5px] before:w-[98%] before:h-[97%] before:rounded before:bg-[#14181a] before:z-0 
 }
 .sec-4 .portfolio img{
   @apply  h-[100%] w-[100%] absolute left-[20px] top-[-20px] rounded  

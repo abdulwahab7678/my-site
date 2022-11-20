@@ -42,36 +42,42 @@ spyScrolling();
 
 // darkAndLightMode
 
-const setDarkMode = (active = false) => {
-  const wrapper = document.querySelector(":root");
-  if (active) {
-    wrapper.setAttribute("data-theme", "dark");
-    // localStorage.setItem("theme", "dark");
-  } else {
-    wrapper.setAttribute("data-theme", "light");
-    // localStorage.setItem("theme", "light");
-  }
-};
+// const setDarkMode = (active = false) => {
+//   const wrapper = document.querySelector(":root");
+//   if (active) {
+//     wrapper.setAttribute("data-theme", "dark");
+//     // localStorage.setItem("theme", "dark");
+//   } else {
+//     wrapper.setAttribute("data-theme", "light");
+//     // localStorage.setItem("theme", "light");
+//   }
+// };
 
-const toggleDarkMode = () => {
-  const theme = document.querySelector(":root").getAttribute("data-theme");
-  // If the current theme is "light", we want to activate dark
-  setDarkMode(theme === "light");
-};
+// const toggleDarkMode = () => {
+//   const theme = document.querySelector(":root").getAttribute("data-theme");
+//   // If the current theme is "light", we want to activate dark
+//   setDarkMode(theme === "light");
+// };
 
-const initDarkMode = () => {
-  const query = window.matchMedia("(prefers-color-scheme: dark)");
-  let active = query.matches;
-  setDarkMode(active);
+// const initDarkMode = () => {
+//   const query = window.matchMedia("(prefers-color-scheme: dark)");
+//   let active = query.matches;
+//   setDarkMode(active);
 
-  query.addListener(e => setDarkMode(e.matches));
+//   query.addListener(e => setDarkMode(e.matches));
 
-  const toggleButton = document.querySelector(".js__dark-mode-toggle");
-  toggleButton.addEventListener("click", toggleDarkMode);
-};
+//   const toggleButton = document.querySelector(".js__dark-mode-toggle");
+//   toggleButton.addEventListener("click", toggleDarkMode);
+// };
 
-initDarkMode();
+// initDarkMode();
 
+
+
+const checkbox = document.getElementById("checkbox")
+checkbox.addEventListener("change", () => {
+  document.body.classList.toggle("dark")
+})
 
 
 // form
@@ -89,7 +95,7 @@ form.addEventListener("submit", function (e) {
   var json = JSON.stringify(object);
   result.innerHTML = "Please wait...";
 
-  fetch("https://api.web3forms.com/submit", {
+  fetch("", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --white: #14181a;
     --black:  #e9e9e3;
     --primary: #00b7c6;
@@ -40,7 +40,6 @@
   
   .dark-mode-toggle:focus {
     outline: none;
-    /* border-color: var(--primary); */
   }
   
   :root[data-theme="dark"] .dark-mode-toggle__text:before {
@@ -176,7 +175,7 @@
     }
   }
   
-  /* Hide only visually, but have it available for screenreaders */
+  
   .hidden--visually {
     border: 0;
     clip: rect(0 0 0 0);
@@ -187,8 +186,58 @@
     position: absolute;
     width: 1px;
   }
+ */
 
-  .scrollToTopBtn {
+ body.dark {background-color:#e1e1d5;} /* #9b59b6 */
+
+ body.dark h1, body.dark h2 ,body.dark p , body.dark .contact-us h3 , body.dark .contact-us i{
+color: black !important;
+ }
+ body.dark footer p{
+  color: white !important;
+  
+ }
+ 
+ .checkbox {
+   opacity: 0;
+   position: absolute;
+ }
+ 
+ .checkbox-label {
+   background-color: white;
+   width: 50px;
+   height: 26px;
+   border-radius: 50px;
+   position: relative;
+   padding: 5px;
+   cursor: pointer;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ 
+ .fa-moon {color: #f1c40f;}
+ 
+ .fa-sun {color: #f39c12;}
+ 
+ .checkbox-label .ball {
+   background-color: #000;
+   width: 22px;
+   height: 22px;
+   position: absolute;
+   left: 2px;
+   top: 2px;
+   border-radius: 50%;
+   transition: transform 0.2s linear;
+ }
+ 
+ .checkbox:checked + .checkbox-label .ball {
+   transform: translateX(24px);
+ }
+ 
+
+
+ .scrollToTopBtn {
     background-color: black;
     border: 2px solid white;
     border-radius: 4px;

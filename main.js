@@ -1,6 +1,6 @@
-import './style.css'
-import './style2.css'
-import '@fortawesome/fontawesome-free/css/all.css'
 import './font.css'
-import 'flowbite/';
 import './code.js';
+import './style2.css'
+import './style.css'
+import 'flowbite/';
+import '@fortawesome/fontawesome-free/css/all.css'

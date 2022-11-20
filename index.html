@@ -12,8 +12,8 @@
 
   <nav>
     <div class="container flex flex-wrap justify-between items-center">
-      <a href="/" class="flex items-center z-50">
-        <span class="flex items-end self-center text-3xl leading-6 font-semibold whitespace-nowrap dark:text-white">Abdul<div class="h-2 w-2 ml-1 rounded-full bg-gradient-to-r from-[#43cea2] to-[#0e71c2]"></div></span>
+      <a href="/" class="flex items-center z-50 text-white">
+        <span class="flex items-end self-center text-3xl leading-6 font-semibold whitespace-nowrap">Abdul<div class="h-2 w-2 ml-1 rounded-full bg-gradient-to-r from-[#43cea2] to-[#0e71c2]"></div></span>
       </a>
       <button type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg 
         lg:hidden hover:bg-gray-100 focus:outline-none ">
@@ -32,13 +32,17 @@
             <li><a class="nav-link" href="#aboutUs">About</a></li>
             <li><a class="nav-link" href="#mySkills">Skills</a></li>
             <li><a class="nav-link" href="#projects">Projects</a></li>
-            <li><a class="nav-link" href="#contactUs">Contact</a></li>
+            <li><a class="nav-link" href="#contactMe">Contact</a></li>
           </ul>
         </div>
-        <button class="js__dark-mode-toggle dark-mode-toggle" type="button">
-          <span class="dark-mode-toggle__icon"></span>
-          <span class="dark-mode-toggle__text hidden--visually">dark mode</span>
-        </button>
+        <div class="ml-4">
+          <input type="checkbox" class="checkbox" id="checkbox">
+          <label for="checkbox" class="checkbox-label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <span class="ball"></span>
+          </label>
+        </div>        
       </div>
 
     </div>
@@ -49,13 +53,16 @@
         <div class="lg:col-span-6 md:col-span-12 sm:col-span-12 md:order-1 sm:order-1">
           <div class="content md:text-center sm:text-center">
             <h2>Hi</h2>
-            <h1>I am <span>Muzzmmil khan</span></h1>
+            <h1>I am <span>Abdul Wahab</span></h1>
             <h2>front End Developer</h2>
-            <p>Hi, my name is Muzzmmil Khan and I am a front End developer with 2+ years of experience with modern
+            <p>Hi, my name is Abdul Wahab and I am a front End developer with 2+ years of experience with modern
               technologies</p>
-            <a href="./mycv.doc" class="main-btn sm:my-3" download><span class=" lg:py-[12px] md:py-[12px] sm:py-[10px] px-[27px]"><i
-                  class="fa-solid fa-download mr-3 text-[20px] "></i>Download
-                Resume</span></a>
+                <a href="./mycv.doc" class="main-btn group group-hover:from-[#43cea2] group-hover:to-[#0e71c2]">
+                  <span class="group-hover:bg-opacity-0">
+                    <i class="fa-solid fa-download mr-3 text-[20px] "></i>Download Resume
+                  </span>
+                </a>
+                
           </div>
         </div>
         <div class="lg:col-span-6 md:col-span-12 sm:col-span-12 mx-auto ">
@@ -208,7 +215,7 @@
             </div>
             <div
               class="opacity-0 transition-all ease-in-out duration-200 delay-200 group-hover:opacity-[100%] group-hover:h-[97%] group-hover:w-[98%] group-hover:absolute group-hover:left-[5px] group-hover:top-[5px] group-hover:bg-gradient-to-t group-hover:from-[#14181a]">
-              <div class="port-icons ">
+              <div class="port-icons">
                 <a href="#"><i class="fa-solid fa-eye"></i></a>
                 <a href="#"><i class="fa-brands fa-github"></i></a>
               </div>
@@ -322,15 +329,15 @@
       </div>
     </div>
   </section>
-  <section id="contactUs" class="sec-5 hero-bg py-20 sm:py-10 md:py-10">
+  <section id="contactMe" class="sec-5 hero-bg py-20 sm:py-10 md:py-10">
     <div class="container">
-      <h2 class="mb-8 text-center">contact <span>us</span></h2>
+      <h2 class="mb-8 text-center">contact <span>me</span></h2>
       <div class="grid grid-cols-12">
         <div class="lg:col-span-6 md:col-span-12 sm:col-span-12">
           <div class="flex items-center">
             <div class="container mx-auto">
               <div class="max-w-md mx-auto px-7 rounded-md shadow-[0_35px_60px_10px_rgba(0,0,0,0.3)] pb-2">
-                <div class="m-7 mb-0">
+                <div class="m-7 mb-0 py-5">
                   <form action="https://api.web3forms.com/submit" method="POST" id="form">
                     <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
                     <input type="hidden" name="subject" value="New Submission from Web3Forms" />
@@ -354,9 +361,8 @@
                         required></textarea>
                     </div>
                     <div class="mb-4">
-                      <button type="submit" class="main-btn w-[100%]"><span
-                          class="w-[100%] py-2 flex justify-center">Send
-                          Massage</span></button>
+                      <button type="submit" class="main-btn  group group-hover:from-[#43cea2] group-hover:to-[#0e71c2] w-[100%]"><span
+                          class="group-hover:bg-opacity-0 w-[100%] py-2 flex justify-center">Submit</span></button>
                     </div>
                     <p class="text-base text-center text-gray-400 pb-6" id="result"></p>
                   </form>
@@ -366,32 +372,32 @@
           </div>
         </div>
         <div class="lg:col-span-6 md:col-span-12 sm:col-span-12">
-          <div class="contact-us sm:px-12 md:px-12">
+          <div class="contact-us sm:px-12 md:px-12 max-w-md mx-auto px-7 rounded-md shadow-[0_35px_60px_10px_rgba(0,0,0,0.3)] pb-2">
             <div class="content">
-              <i class="fa-solid fa-envelope pb-2"></i>
+              <i class="fa-solid fa-envelope pb-2 text-white"></i>
               <h3>mrwahab308@gmail.com</h3>
               <p>Email me for any questions or inquiries.</p>
             </div>
             <div class="content">
-              <i class="fa-solid fa-phone pb-2"></i>
+              <i class="fa-solid fa-phone pb-2 text-white "></i>
               <h3><a href="#">03408366932</a></h3>
               <p>Call me for any questions or inquiries.</p>
             </div>
             <div class="content">
-              <i class="fa-solid fa-location-dot pb-2"></i>
+              <i class="fa-solid fa-location-dot pb-2 text-white"></i>
               <h3 class="capitalize">Garden west karachi</h3>
               <p>Visit me for any questions or inquiries.</p>
             </div>
             <div class="px-5">
               <h3 class="capitalize">follow me</h3>
               <div class="social-icons">
-                <a href="#">
+                <a href="https://www.facebook.com/magsi15">
                   <i class="fa-brands fa-facebook-f"></i>
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/theabdulwahab/">
                   <i class="fa-brands fa-linkedin"></i>
                 </a>
-                <a href="#">
+                <a href="https://github.com/abdulwahab7678">
                   <i class="fa-brands fa-github"></i>
                 </a>
                 <a href="#">

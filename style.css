@@ -88,13 +88,13 @@ p{
 @apply  relative inline-flex lg:w-[90%] md:w-[100%] sm:w-[100%] items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-r from-[#43cea2] to-[#0e71c2] hover:from-[#43cea2] hover:to-[#0e71c2] 
 }
 .sec-3 .box .box-span{
-  @apply flex items-center relative w-[100%] px-5 py-2.5 transition-all ease-in duration-75 bg-[#14181a] rounded-md group-hover:bg-opacity-0
+  @apply flex items-center relative w-[100%] lg:px-5 sm:px-3 py-2.5 transition-all ease-in duration-75 bg-[#14181a] rounded-md group-hover:bg-opacity-0
 }
 .sec-3 .box img{
-  @apply  h-12 w-12 sm:h-8 sm:w-8 mr-3 
+  @apply  h-12 w-12 sm:h-6 sm:w-6 mr-3 
 }
 .sec-3 .box span{
-  @apply  lg:text-[20px] sm:text-[17px] font-medium text-white italic uppercase
+  @apply  lg:text-[20px] sm:text-[15px] font-medium text-white italic uppercase
 }
 .sec-4 .portfolio{
   @apply text-center h-[400px] lg:w-[100%] md:w-[480px]  sm:w-[330px] sm:h-[260px] relative mt-[30px] bg-gradient-to-r from-[#43cea2] to-[#0e71c2] rounded before:content-[''] before:absolute before:left-[5px] before:top-[5px] before:bottom-[5px] before:right-[5px] before:w-[98%] before:h-[97%] before:rounded before:bg-[#14181a] before:z-0 
@@ -109,13 +109,13 @@ p{
   @apply text-[20px] border-2 rounded-[100%] p-2 first-of-type:mr-1 last-of-type:ml-1 text-white
 }
 .sec-4 .portfolio-p .content {
-  @apply absolute bottom-0 pl-5 pb-4
+  @apply absolute bottom-0 lg:pl-5 md:pl-3 sm:pl-3 pb-4
 }
 .sec-4 .portfolio-p .content h3{
-  @apply lg:text-[25px] uppercase tracking-[2px] pb-1 text-white
+  @apply lg:text-[25px] sm:text-[18px] uppercase tracking-[2px] pb-1 text-white
 }
 .sec-4 .portfolio-p .content p{
-  @apply capitalize	p-0 [word-spacing:14px] text-white
+  @apply capitalize	p-0 [word-spacing:10px] text-white sm:text-[14px]
 }
 .sec-5 .contact-us{
   @apply py-[30px] mt-[30px] rounded-md max-w-md mx-auto shadow-[0_35px_60px_10px_rgba(0,0,0,0.3)]

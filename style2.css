@@ -96,6 +96,7 @@ color: black !important;
     transition: opacity 0.25s ease;
     border: 0;
     background-color: transparent;
+    margin-top: 5px;
  }
  @media (max-width:1023px) {
   .button_container{
@@ -120,7 +121,7 @@ color: black !important;
   .button_container span {
     background: #fff;
     border: none;
-    height: 4px;
+    height: 3px;
     width: 100%;
     position: absolute;
     top: 0;

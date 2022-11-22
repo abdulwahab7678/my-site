@@ -34,11 +34,11 @@ nav{
   @apply block lg:bg-gradient-to-r lg:from-[#43cea2] lg:to-[#0e71c2] py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:p-0 dark:text-white
 }
 .sec-1{
-  @apply lg:h-[100vh] md:h-[100%] sm:h-[100%]  flex items-center justify-center pt-[100px] md:pb-12 sm:pb-12 relative
+  @apply lg:h-[100vh] md:h-[100%] sm:h-[100%] flex items-center justify-center pt-[100px] md:pb-12 sm:pb-12 relative
 }
 
 .sec-1 .profile-img{
-  @apply lg:h-[380px] md:h-[200px] sm:h-[150px] lg:w-[380px] md:w-[200px] sm:w-[150px] rounded-[100%] border-4 border-zinc-700 pt-4 overflow-hidden
+  @apply lg:h-[380px] md:h-[200px] sm:h-[150px] lg:w-[380px] md:w-[200px] sm:w-[150px] rounded-[100%] border-4 border-zinc-700 overflow-hidden
 }
 h1{
   @apply  text-[#f1f2f3] lg:text-[50px] md:text-[40px] sm:text-[34px] font-medium lg:leading-[70px] md:leading-[55px] sm:leading-[45px] tracking-[1px] uppercase

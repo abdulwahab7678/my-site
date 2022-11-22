@@ -7,7 +7,7 @@ color: black !important;
   color: white !important;
   
  }
- 
+ /* darkmodebtn */
  .checkbox {
    opacity: 0;
    position: absolute;
@@ -46,6 +46,7 @@ color: black !important;
  }
  
 
+ /* scrollToTopBtn */
 
  .scrollToTopBtn {
     background-color: black;
@@ -56,18 +57,12 @@ color: black !important;
     font-size: 18px;
     line-height: 48px;
     width: 48px;
-  
-    /* place it at the bottom right corner */
     position: fixed;
     bottom: 20px;
     right: 20px;
-    /* keep it at the top of everything else */
     z-index: 100;
-    /* hide with opacity */
     opacity: 0;
-    /* also add a translate effect */
     transform: translateY(100px);
-    /* and a transition */
     transition: all 0.5s ease;
   }
   
@@ -77,71 +72,65 @@ color: black !important;
   }
 
 
+/* menuToggle */
 
   #menuToggle {
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: relative;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
   }
   
-  #menuToggle .menu-input
-  {
-    display: flex;
-    width: 40px;
-    height: 32px;
-    position: absolute;
+  .button_container {
+    display: none !important;
+    position: fixed;
+    top: 5%;
+    right: 2%;
+    height: 27px;
+    width: 35px;
     cursor: pointer;
+    z-index: 100;
+    transition: opacity 0.25s ease;
+    border: 0;
+    background-color: transparent;
+ }
+ @media (max-width:1023px) {
+  .button_container{
+    display: flex !important;
+  }
+}
+  .button_container:hover {
+    opacity: 0.7;
+ }
+  .button_container.active .top {
+    transform: translateY(11px) translateX(0) rotate(45deg);
+    background: #fff;
+ }
+  .button_container.active .middle {
     opacity: 0;
-    z-index: 2;
-  }
-  
-  #menuToggle .bar
-  {
-    display: none;
-    width: 29px;
-    height: 2px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #ffffff;
-    border-radius: 3px;
-    z-index: 1;
-    transform-origin: 5px 0px;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
-  }
-  
-  #menuToggle .bar:first-child
-  {
-    transform-origin: 0% 0%;
-  }
-  
-  #menuToggle .bar:nth-last-child(2)
-  {
-    transform-origin: 0% 100%;
-  }
-  
-  #menuToggle input:checked ~ .bar
-  {
-    opacity: 1;
-    transform: rotate(45deg) translate(-3px, -1px);
-    background: #36383F;
-  }
-  #menuToggle input:checked ~ .bar:nth-last-child(3)
-  {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-  }
-  
-  #menuToggle input:checked ~ .bar:nth-last-child(2)
-  {
-    transform: rotate(-45deg) translate(0, -1px);
-  }
-  @media (max-width:1023px) {
-    #menuToggle .bar{
-      display: flex !important;
-    }
-  }
+    background: #fff;
+ }
+  .button_container.active .bottom {
+    transform: translateY(-11px) translateX(0) rotate(-45deg);
+    background: #fff;
+ }
+  .button_container span {
+    background: #fff;
+    border: none;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.35s ease;
+    cursor: pointer;
+ }
+  .button_container span:nth-of-type(2) {
+    top: 11px;
+ }
+  .button_container span:nth-of-type(3) {
+    top: 22px;
+ }

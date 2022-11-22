@@ -158,5 +158,6 @@ const navbar = document.querySelector(".nav-ul-p")
 
 menuBtn.addEventListener("click", ()=>{
   navbar.classList.toggle("show")
+  menuBtn.classList.toggle("active")
 })
 

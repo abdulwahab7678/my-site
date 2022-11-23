@@ -60,7 +60,7 @@ form.addEventListener("submit", function (e) {
   var json = JSON.stringify(object);
   result.innerHTML = "Please wait...";
 
-  fetch("", {
+  fetch("https://api.web3forms.com/submit", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -112,7 +112,7 @@ form.addEventListener("submit", function (e) {
 
 
 
-
+// goTopBtn
 
 let requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
 
@@ -152,6 +152,9 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 
+
+
+// menuNavbar
 
 const menuBtn = document.querySelector("#menuToggle")
 const navbar = document.querySelector(".nav-ul-p")

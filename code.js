@@ -1,4 +1,8 @@
+
+
+
 // NavLinkActived
+
 
 const makeNavLinksSmooth = () => {
   const navLinks = document.querySelectorAll(".nav-link");

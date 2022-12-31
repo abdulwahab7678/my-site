@@ -19,7 +19,7 @@ nav{
   @apply text-[30px] inline-flex items-center z-50 text-white p-2 lg:hidden
 }
 .nav-ul-p{
-  @apply  transition-all duration-700 ease-in-out sm:left-[-100%] sm:w-[100%] sm:h-[100%] sm:bg-[#000] sm:bg-opacity-80 sm:fixed sm:top-[50%] sm:translate-x-[-50%] sm:translate-y-[-50%] md:w-[100%] md:h-[100%] md:bg-[#000] md:bg-opacity-80 md:fixed md:top-[50%] md:left-[50%] md:translate-x-[-50%] md:translate-y-[-50%]
+  @apply  transition-all duration-700 ease-in-out sm:left-[-100%]  sm:w-[100%] sm:h-[100%] sm:bg-[#000] sm:bg-opacity-80 sm:fixed sm:top-[50%] sm:translate-x-[-50%] sm:translate-y-[-50%] md:w-[100%] md:h-[100%] md:bg-[#000] md:bg-opacity-80 md:fixed md:top-[50%] md:left-[-100%] md:translate-x-[-50%] md:translate-y-[-50%]
 }
 .show{
   @apply left-[50%] transition-all duration-700 ease-in-out
@@ -85,7 +85,7 @@ p{
   @apply lg:h-[100vh] md:h-[100%] sm:h-[100%] flex items-center md:px-4 sm:px-4
 }
 .sec-3 .box{
-@apply  relative inline-flex lg:w-[90%] md:w-[100%] sm:w-[100%] items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-r from-[#43cea2] to-[#0e71c2] hover:from-[#43cea2] hover:to-[#0e71c2] 
+@apply  relative inline-flex lg:w-[100%] md:w-[100%] sm:w-[100%] items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-r from-[#43cea2] to-[#0e71c2] hover:from-[#43cea2] hover:to-[#0e71c2] 
 }
 .sec-3 .box .box-span{
   @apply flex items-center relative w-[100%] lg:px-5 sm:px-3 py-2.5 transition-all ease-in duration-75 bg-[#14181a] rounded-md group-hover:bg-opacity-0

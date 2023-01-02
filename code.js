@@ -99,3 +99,11 @@ menuBtn.addEventListener("click", ()=>{
   menuBtn.classList.toggle("active")
 })
 
+
+
+$(document).ready(function () {
+  $("#link").click(function (e) {
+      e.preventDefault();
+      window.location.href = "abdulwahab.pdf";
+  });
+});

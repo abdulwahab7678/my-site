@@ -104,6 +104,6 @@ menuBtn.addEventListener("click", ()=>{
 $(document).ready(function () {
   $("#link_cv").click(function (e) {
       e.preventDefault();
-      window.location.href = "abdulwahab.pdf";
+      window.location.href = "./abdulwahab.pdf";
   });
 });

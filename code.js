@@ -102,7 +102,7 @@ menuBtn.addEventListener("click", ()=>{
 
 
 $(document).ready(function () {
-  $("#link").click(function (e) {
+  $("#link_cv").click(function (e) {
       e.preventDefault();
       window.location.href = "abdulwahab.pdf";
   });

@@ -1,8 +1,5 @@
 
-
-
 // NavLinkActived
-
 
 const makeNavLinksSmooth = () => {
   const navLinks = document.querySelectorAll(".nav-link");
@@ -89,21 +86,62 @@ checkbox.addEventListener("change", () => {
 })
 
 
-// menuNavbar
+
+
+
+// modal_start
+
+const modalOpenBtn = document.querySelector("#modalOpenBtn")
+const modalCloseBtn = document.querySelectorAll(".modalCloseBtn")
+const modal = document.querySelector("#modal")
+
+modalOpenBtn.addEventListener("click", ()=>{
+  modal.classList.add("show")
+})
+
+
+modalCloseBtn.forEach(e => {
+  e.addEventListener("click",()=>{
+    modal.classList.remove("show")
+  })
+ });
+
+// modal_end
+
+
+// navbar_menu_start
 
 const menuBtn = document.querySelector("#menuToggle")
+const nav_links = document.querySelectorAll(".nav-link")
 const navbar = document.querySelector(".nav-ul-p")
 
 menuBtn.addEventListener("click", ()=>{
   navbar.classList.toggle("show")
   menuBtn.classList.toggle("active")
+  const currentState = menuBtn.getAttribute("data-state");
+
+  if (!currentState || currentState === "closed") {
+    menuBtn.setAttribute("data-state", "opened");
+    menuBtn.setAttribute("aria-expanded", "true");
+  } else {
+    menuBtn.setAttribute("data-state", "closed");
+    menuBtn.setAttribute("aria-expanded", "false");
+  }
 })
 
+nav_links.forEach(e => {
+  e.addEventListener("click",()=>{
+    navbar.classList.remove("show")
+    menuBtn.classList.remove("active")
+  const currentState = menuBtn.getAttribute("data-state");
 
-
-// $(document).ready(function () {
-//   $("#link_cv").click(function (e) {
-//       e.preventDefault();
-//       window.location.href = "./abdulwahab.pdf";
-//   });
-// });
+  if (!currentState || currentState === "closed") {
+    menuBtn.setAttribute("data-state", "opened");
+    menuBtn.setAttribute("aria-expanded", "true");
+  } else {
+    menuBtn.setAttribute("data-state", "closed");
+    menuBtn.setAttribute("aria-expanded", "false");
+  }
+  })
+});
+// navbar_menu_end

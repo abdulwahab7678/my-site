@@ -16,10 +16,16 @@
         <span class="flex items-end self-center text-3xl leading-6 font-semibold whitespace-nowrap">Abdul<div
             class="h-2 w-2 ml-1 rounded-full bg-gradient-to-r from-[#43cea2] to-[#0e71c2]"></div></span>
       </a>
-      <button class="button_container" id="menuToggle" aria-controls="primary-menu" aria-expanded="false">
-        <span class="top"></span>
-        <span class="middle"></span>
-        <span class="bottom"></span>
+  
+      <button class="menu-btn" id="menuToggle" aria-controls="primary-menu" aria-expanded="false">
+        <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="40">
+          <rect class="line top" width="80" height="10" x="10" y="25" rx="5">
+          </rect>
+          <rect class="line middle" width="80" height="10" x="10" y="45" rx="5">
+          </rect>
+          <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5">
+          </rect>
+        </svg>
       </button>
 
       <div class="flex items-center">
@@ -54,7 +60,7 @@
             <h2>front End Developer</h2>
             <p>Hi, my name is Abdul Wahab and I am a front End developer with 2+ years of experience with modern
               technologies</p>
-            <a href="#" data-modal-toggle="defaultModal"
+            <a href="#" id="modalOpenBtn"
               class="main-btn group group-hover:from-[#43cea2] group-hover:to-[#0e71c2]">
               <span class="group-hover:bg-opacity-0">
                 <i class="fa-solid fa-eye mr-3 text-[20px]"></i>View Resume
@@ -439,30 +445,21 @@
 
 
   <!-- Main modal -->
-  <div id="defaultModal" tabindex="-1" aria-hidden="true"
-    class="fixed top-[50%] translate-x-[-50%] translate-y-[-50%] left-[50%]  z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
-    <div class="relative w-full h-full max-w-2xl md:h-auto">
+  <div id="modal" class="modal-main h-modal">
+    <div class="z-50 flex items-center relative w-full h-full max-w-2xl md:h-auto">
       <!-- Modal content -->
-      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+      <div class="modal-content">
         <!-- Modal header -->
-        <div class="flex py-3 px-7 items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+        <div class="modal-header">
+          <h3 class="text-xl font-semibold text-white">
             Resume
           </h3>
-          <button type="button"
-            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-            data-modal-toggle="defaultModal">
-            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"></path>
-            </svg>
-            <span class="sr-only">Close modal</span>
+          <button type="button" class="modalCloseBtn">
+            <i class="fa-solid fa-xmark text-[25px]"></i>
           </button>
         </div>
         <!-- Modal body -->
-        <div class="p-6 overflow-y-scroll h-[400px]">
+        <div class="modal-body">
           <h2>Frontend Developer
           </h2>
           <h3>Abdul Wahab</h3>
@@ -474,37 +471,37 @@
             <h3>Personal Data:
             </h3>
             <div class="info-c">
-              <div class="flex items-center ">
+              <div class="info-cc">
                 <p class="mr-5">Name :</p>
                 <p>Abdul Wahab</p>
               </div>
-              <div class="flex items-center">
+              <div class="info-cc">
                 <p class="mr-5">Father’s Name :</p>
                 <p>Abdul Razzaq</p>
               </div>
-              <div class="flex items-center">
+              <div class="info-cc">
                 <p class="mr-5">Nationality :</p>
                 <p>Pakistani</p>
               </div>
-              <div class="flex items-center">
+              <div class="info-cc">
                 <p class="mr-5">Religion :</p>
                 <p>Islam</p>
               </div>
-                <div class="flex items-center">
+                <div class="info-cc">
                   <p class="mr-5">Email Address :</p>
                   <p>mrwahab308@gmail.com</p>
                 </div>
-                <div class="flex items-center">
+                <div class="info-cc">
                   <p class="mr-5">Marital Status :</p>
                   <p>Single</p>
                 </div>
-                <div class="flex items-center">
+                <div class="info-cc">
                   <p class="mr-5">Linkedin :</p>
-                  <p><a href="https://www.linkedin.com/in/theabdulwahab/">https://www.linkedin.com/in/theabdulwahab/</a></p>
+                  <p><a href="https://www.linkedin.com/in/theabdulwahab"> https://www.linkedin.com/in/theabdulwahab</a></p>
                 </div>
-                <div class="flex items-center">
+                <div class="info-cc">
                   <p class="mr-5">github :</p>
-                  <p><a href=" https://github.com/abdulwahab7678">https://github.com/abdulwahab7678</a></p>
+                  <p><a href="https://github.com/abdulwahab7678">https://github.com/abdulwahab7678</a></p>
                 </div>
             </div>
            
@@ -563,13 +560,13 @@
 
         </div>
         <!-- Modal footer -->
-        <div class="flex items-center py-3 px-7 justify-end p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+        <div class="modal-footer">
         
-          <button data-modal-toggle="defaultModal" type="button"
-            class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Close</button>
+          <button class="modalCloseBtn" type="button">Close</button>
         </div>
       </div>
     </div>
+    <div class="overlay"></div>
   </div>
 
 

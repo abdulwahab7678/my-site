@@ -136,18 +136,48 @@ p{
   @apply text-[20px] text-white pt-4 mr-4 scale-95 hover:scale-125 transition-all ease-in-out duration-300
 }
 
-#defaultModal h2{
-  @apply text-center pb-7
+.modal-main{
+  @apply  h-[100%] fixed top-[50%] translate-x-[-50%] translate-y-[-50%] left-[50%] z-50 hidden w-full overflow-x-hidden overflow-y-auto md:inset-0  md:h-full
+}
+.modal-content{
+  @apply relative bg-gray-700 rounded-lg shadow
+}
+.modal-header {
+  @apply flex py-3 px-7 items-start justify-between p-4 border-b rounded-t 
+}
+.modal-header button{
+  @apply text-gray-400 bg-transparent rounded-lg text-sm p-1.5 ml-auto inline-flex items-center hover:bg-gray-600 hover:text-white 
+}
+.modal-main h2{
+  @apply text-center pb-7 sm:pb-2
 }
 
-#defaultModal p{
+.modal-main p{
   @apply text-[15px] leading-[20px] py-2 
 }
-#defaultModal ul li{
+.modal-main ul li{
   @apply text-[#bac0c4] text-[15px] leading-[20px] py-2 list-disc ml-6
 }
-#defaultModal .info-c p{
+.modal-main .info-c p{
   @apply w-[50%]
+}
+.modal-main .info-cc {
+  @apply flex items-center  sm:flex-wrap md:flex-wrap
+}
+.modal-body {
+  @apply p-6 overflow-y-scroll h-[400px] sm:h-[360px]  
+}
+.modal-footer {
+  @apply flex items-center py-3 px-7 justify-end p-6 space-x-2 border-t border-gray-600 rounded-b 
+}
+.modal-footer button{
+  @apply focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border text-sm font-medium px-5 py-2.5  focus:z-10 bg-gray-700 text-gray-300 border-gray-500 hover:text-white hover:bg-gray-600 ring-gray-600 
+}
+.overlay{
+  @apply h-[100%] w-[100%] bg-black opacity-75 fixed left-0 top-0 
+}
+.show {
+  @apply flex justify-center
 }
 
 body.dark {background-color:#e1e1d5;} /* #9b59b6 */
@@ -155,7 +185,7 @@ body.dark {background-color:#e1e1d5;} /* #9b59b6 */
 body.dark h1, body.dark h2 ,body.dark p , body.dark .contact-us h3 , body.dark .contact-us i{
 color: black !important;
 }
-body.dark footer p{
+body.dark footer p ,body.dark .modal-main p,body.dark .modal-main h2 ,body.dark .modal-main li{
  color: white !important;
  
 }
@@ -236,54 +266,41 @@ body.dark footer p{
    user-select: none;
  }
  
- .button_container {
-   display: none !important;
-   position: fixed;
-   top: 5%;
-   right: 2%;
-   height: 27px;
-   width: 35px;
-   cursor: pointer;
-   z-index: 100;
-   transition: opacity 0.25s ease;
-   border: 0;
-   background-color: transparent;
-   margin-top: 5px;
+ 
+
+.menu-btn {
+  --button-color: #fff;
+  background: transparent;
+  /* border: 10px solid var(--button-color, #000); */
+  display: none !important;
 }
-@media (max-width:1023px) {
- .button_container{
-   display: flex !important;
- }
+@media (max-width: 991px) {
+  .menu-btn {
+    display: flex !important;
+
+  }
 }
- .button_container:hover {
-   opacity: 0.7;
+.menu-btn .line {
+  transition: y 300ms ease-in 300ms, rotate 300ms ease-in, opacity 0ms 300ms;
+  transform-origin: center;
 }
- .button_container.active .top {
-   transform: translateY(11px) translateX(0) rotate(45deg);
-   background: #fff;
+
+.menu-btn[aria-expanded="true"] .line {
+  transition: y 300ms ease-in, rotate 300ms ease-in 300ms, opacity 0ms 300ms;
 }
- .button_container.active .middle {
-   opacity: 0;
-   background: #fff;
+
+.menu-btn[aria-expanded="true"] :is(.top, .bottom) {
+  y: 45;
 }
- .button_container.active .bottom {
-   transform: translateY(-11px) translateX(0) rotate(-45deg);
-   background: #fff;
+
+.menu-btn[aria-expanded="true"] .top {
+  rotate: 45deg;
 }
- .button_container span {
-   background: #fff;
-   border: none;
-   height: 3px;
-   width: 100%;
-   position: absolute;
-   top: 0;
-   left: 0;
-   transition: all 0.35s ease;
-   cursor: pointer;
+
+.menu-btn[aria-expanded="true"] .middle {
+  opacity: 0;
 }
- .button_container span:nth-of-type(2) {
-   top: 11px;
-}
- .button_container span:nth-of-type(3) {
-   top: 22px;
+
+.menu-btn[aria-expanded="true"] .bottom {
+  rotate: -45deg;
 }

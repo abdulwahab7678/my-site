@@ -90,19 +90,21 @@ checkbox.addEventListener("change", () => {
 
 
 // modal_start
-
+const body = document.querySelector("body")
 const modalOpenBtn = document.querySelector("#modalOpenBtn")
 const modalCloseBtn = document.querySelectorAll(".modalCloseBtn")
 const modal = document.querySelector("#modal")
 
 modalOpenBtn.addEventListener("click", ()=>{
   modal.classList.add("show")
+  body.style.cssText="overflow-y: hidden;"
 })
 
 
 modalCloseBtn.forEach(e => {
   e.addEventListener("click",()=>{
     modal.classList.remove("show")
+    body.style.cssText="overflow-y: auto;"
   })
  });
 

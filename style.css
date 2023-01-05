@@ -115,7 +115,7 @@ p{
   @apply absolute bottom-0 lg:pl-5 md:pl-3 sm:pl-3 pb-4
 }
 .sec-4 .portfolio-p .content h3{
-  @apply lg:text-[25px] sm:text-[18px] uppercase tracking-[2px] pb-1 text-white
+  @apply lg:text-[25px] sm:text-[16px] uppercase tracking-[2px] lg:pb-1 sm:pb-0 text-white
 }
 .sec-4 .portfolio-p .content p{
   @apply capitalize	p-0 [word-spacing:10px] text-white sm:text-[14px]
@@ -127,7 +127,7 @@ p{
   @apply pb-3 border-b-2 border-gray-500 px-5 mb-4
 }
 .sec-5 .contact-us h3{
-  @apply text-[25px] sm:text-[20px] leading-[35px] text-white tracking-[1px]
+  @apply text-[25px] sm:text-[20px] leading-[35px] text-white tracking-[1px] p-0
 }
 .sec-5 .contact-us p{
   @apply text-[13px] p-0 text-white
@@ -187,7 +187,7 @@ body.dark {background-color:#e1e1d5;} /* #9b59b6 */
 body.dark h1, body.dark h2 ,body.dark p , body.dark .contact-us h3 , body.dark .contact-us i{
 color: black !important;
 }
-body.dark footer p ,body.dark .modal-main p,body.dark .modal-main h2 ,body.dark .modal-main li{
+body.dark footer p ,body.dark .modal-main p,body.dark .modal-main h2 ,body.dark .modal-main li, body.dark .sec-4 .portfolio-p .content p{
  color: white !important;
  
 }

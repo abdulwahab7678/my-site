@@ -275,6 +275,7 @@ body.dark footer p ,body.dark .modal-main p,body.dark .modal-main h2 ,body.dark 
   background: transparent;
   /* border: 10px solid var(--button-color, #000); */
   display: none !important;
+  margin-left: -15px !important;
 }
 @media (max-width: 991px) {
   .menu-btn {

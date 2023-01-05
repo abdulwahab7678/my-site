@@ -159,13 +159,13 @@ p{
   @apply text-[#bac0c4] text-[15px] leading-[20px] py-2 list-disc ml-6
 }
 .modal-main .info-c p{
-  @apply w-[50%] sm:w-[35%]
+  @apply w-[48%] sm:w-[35%]
 }
 .modal-main .info-cc {
   @apply flex items-center
 }
 .modal-body {
-  @apply p-6 overflow-y-scroll h-[400px] sm:h-[360px]  
+  @apply p-6 overflow-y-scroll h-[400px] sm:h-[360px]  overflow-x-hidden
 }
 .modal-footer {
   @apply flex items-center py-3 px-7 justify-end p-6 space-x-2 border-t border-gray-600 rounded-b 
@@ -306,3 +306,26 @@ body.dark footer p ,body.dark .modal-main p,body.dark .modal-main h2 ,body.dark 
 .menu-btn[aria-expanded="true"] .bottom {
   rotate: -45deg;
 }
+
+
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.233); 
+  border-radius: 15px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #43cea2 0%, #0e71c2 100%);
+  border: 2px solid rgba(42, 50, 62, 1);
+  border-radius: 15px
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* lg:from-[#43cea2] lg:to-[#0e71c2] */
